@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block body %}
+    <main>
+      {% if latestEvents.results_returned > 0 %}
+        <ul>
+          {% for event in latestEvents.events %}
+            <li>
+              <div>
+                <span>{{ event.event.started_at }}</span>
+                <span>{{ event.event.title }}</span>
+                <p>{{ event.event.desciption }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <div>no result found</div>
+      {% endif %}
+    </main>
+{% endblock %}

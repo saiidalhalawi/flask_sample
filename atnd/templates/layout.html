@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+        <title>Stock ATND study-event !!</title>
+    </head>
+
+    <body class=wrapper>
+      {% for message in get_flashed_messages() %}
+        <div class=flash>{{ message }}</div>
+      {% endfor %}
+      {% block body %}{% endblock %}
+    </body>
+</html>

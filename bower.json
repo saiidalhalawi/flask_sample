@@ -1,0 +1,26 @@
+{
+  "name": "api_apps",
+  "version": "0.0.0",
+  "description": "manage various external APIs for excercising",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "authors": [
+    "k.kanno"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "grunt": "~0.4.5"
+  }
+}
